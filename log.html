@@ -1799,25 +1799,25 @@ function stopPropagation(event) {
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[],[0,0,11495],[],[[4,0,0,[],[0,24,11469,5],[[0,6,7,0,8,9,10,0,[1,25,11461],[[8,25,2,11],[8,29,2,12],[8,11486,2,13],[8,11486,2,14]]],[0,15,16,0,17,18,0,0,[0,11486,7],[[8,11493,5,5]]]]]],[],[1,0,1,0]];
+window.output["suite"] = [1,2,3,0,[],[0,0,5810],[],[[4,0,0,[],[0,24,5786,5],[[0,6,7,0,8,9,10,0,[1,25,5779],[[8,25,2,11],[8,28,2,12],[8,5804,2,13],[8,5804,2,14]]],[0,15,16,0,17,18,0,0,[0,5804,6],[[8,5810,5,19]]]]]],[],[1,0,1,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*Start","*C:\\Users\\Mario.Doman\\Desktop\\MY_PROJECTS\\VPP_VAGRANT_3VMS_IPERF\\start.robot","*start.robot","*Destroy Vagrant VMs and check shutdown message","eNrtUj1rwzAQ3fsrjgz1UkzrpktLhkIpeAhkKIGOqnS2RZM7ozsn+N9XUgiUoiHZCxII7n3oPalarW57fQErYyNNY+8fn+GTJzAivid0YEDUqLfQbgDJeerBEyzqhwUogw5eYG/s4Anrm4LWRwLEdcAwA3eKBJNE2a85chECT4oBDDmwhuKOwzQoSRHqkcN3siVWyOcx8IhhN9fQdlnwDHKMQtUJVRI7E+9A48XsYKhP0XKedlOM8l9LMco7B5swMkzq+EgxDmzXdV0Ev6Fo4Dnht+ucLzbK1huN4V3wB5QSc3mNzfJam1jOifl0gc1v8GU2VW49P45lUhP/SfWqivtRE7MPxmI37f5YVj/Y1i+/","*Run Process","*Process","*<p>Runs a process and waits for it to complete.\x3c/p>","*vagrant destroy -f, shell=True, stdout=vm_shutdown_log.txt","*${result}","*Starting process:\nvagrant destroy -f","*Waiting for process to complete.","*Process completed.","*${result} = &lt;result object with rc 0&gt;","*Should Contain","*BuiltIn","*<p>Fails if <code>container\x3c/code> does not contain <code>item\x3c/code> one or more times.\x3c/p>","*${result.stdout}, Attempting graceful shutdown of VM"]);
+window.output["strings"] = window.output["strings"].concat(["*","*Start","*C:\\Users\\Mario.Doman\\Desktop\\MY_PROJECTS\\VPP_TREX_VMS\\start.robot","*start.robot","*Show run command on VPP csp2s22c03 before TREX tests","eNq1lk1v2zAMhu/9FbzlUimS/FH7XAw7bZcOuww7qDabCnUkQZaT9N+PdtHFTpy0GDwiBysS+PClKEqrH2aLoKQSXNyCFNBiBcZGDFY3YF2NsMMqugBBRwRaJaBxzrfrfmFZZqJIcp7JGxiva8kFKH6XZAUydQuuiyB5UeRvwzo4DyVPk6REltyC72wcXAuBgjyN7Lum8E7tIfaxvNu9bpr2OPlzCOPvHw9d69HWxwX3jate2unide8D4Oar2ehHE7/EZ9KPUayLtWAUvKf4B9NVNLvzgJS8PgZx/KQ8ZJiMJyUpn0fHw3HVJbS4Pp6iRYbpx+hyedUpv/uU6nJ51YpLNaNaVw3zTbcxlj1pVjWoLQbmg6uwpfLAHVJR7rWJcNn17HiUhYLLcqpaDOh6S9TOs9rt7RH5bougJVdyqvoN7Q0LB/YU3JYFYzenBG1fZ8kfoKUoj4OMlwlm5+jgmbF/i+rcLuw1pCci82sVLtNpwtMe3X/8gm+UZb1BqBz1N8qw22EAqjxozJYUP+sWHhEtBNzSVM3h9w3n/Ogqv54SmYyghUQpzlLQWXOgUjPM4p61FI5xdoHsg5xuvMBiHo3eNc2FTeinJgWhVFIoVZafD6XgeY7qDL17dm1kXTs+XkuoHpd7wu/SmZM2Qrd0C7DhZgudj0Mky6AVz5M5tAnRuDnsWwKWQGd9Q59Be2S0ly+s7S/Ks6T/e39JJ+dqrrXtAp1yj8G42lT/rbUJNdPadodGW7Yh7cbpLcODd2HphCe8VDOq9xsW6R0V2FZb6jDhxMEiqpO+p5Sn6BXUjp5b1sWhrWl6d60eX/sXWN/iqS/z/sfV6g+I1w6f","*Run Process","*Process","*<p>Runs a process and waits for it to complete.\x3c/p>","*vagrant ssh csp2s22c03 -c 'sudo vppctl show run', shell=True, stdout=VPP_show_run_0.txt","*${result}","*Starting process:\nvagrant ssh csp2s22c03 -c 'sudo vppctl show run'","*Waiting for process to complete.","*Process completed.","*${result} = &lt;result object with rc 0&gt;","*Should Contain","*BuiltIn","*<p>Fails if <code>container\x3c/code> does not contain <code>item\x3c/code> one or more times.\x3c/p>","*${result.stdout}, bytes from 10.10.1.2","eNq9mrtyqzgYgPs8hbo0EUHivu2Zne22OTvbyyDbGguJEWAnb7/CiWMwv4jjEcukCCcMn/77hfP8j6g5ooSGQfiCSIhaXiKhOm4Uk0jpiqMjLzttkGEdR/apEEmtm/Z1eLAokjCP0iAhT2j8XGtfgWiQRUnOMX1Buu8QCfI8/bitjG5QEcRRVHAcvaCmV9351WHIQ/um0fU3s8e7vX53w1ku1y8mZXv947/nY3z9w+++bbiqrg/8kro8tNOHX4d3IPT0l9ixjej+7PZWft6Fr/lriO3hG3v+88XKThznB6Jk+R6F11+tHhIejf9IrOQwunu7PuVCh8v3U3SY8Ph7dOFf6jjI7pK68C81DQgFpGalxI3sd0LhLcOl5ExxgxujS95a9+BHbp3yxESH3K8G70dayANSTKUOz+iqttS+wZU+qSvycnlBk4CSqdQf6EZg84a3RtfYCLW7JTD1DpK/QZOwuN4kQRHxZI42DRbqy6nml8PWKL4RMl3ycBJPFR5f0IY38n1FdBQU2VTqD/RxO7ewd1vbxDm39WZbrY6OgjQBPHyj1RLbCzoJaAagS8U63JZMTcLZt8IJFFzVvmxsJhGWAAr/YHBZLY9TSpYDUg/o9MK2p7jFP4weSZ0GceZEN5WL7gOdBTFdQp+DGzf9Rop2f7G7Lw9PCica5HorHxYNKrypDouZtNFSXnM7pUVM8iSJk5v6nOTOo8QByTgJYfRCTnnQ1lkYj+s1TXg2Rw9N49LlyOHkZ63CTfmgA5obow1eOIAfdAGhPzsjp70d6Di929bWzWg+rVy2eUiftmKDT0wenPp+yNYkTNKxjEUMJNKt1KchtrTxnEgnwUVjILgGtEVuOO7sZGRWSaT5oPA5erdpLoVrxVaBQK2C2NWNQ+C1uxRx4EeKa6bYDqT7cLMCLh/nOXfLSj6Zdn7eFs7uw3HRzDNg8BGa1Zi/rerhtv+EKpdosOJit9/YnPZhWP+2tvUjAdEx3vZS2thmbcvrjS2eVgnC8CHTPCw1JXSs3iSB3MyizzkUK43LPS8PbV/fYesoXb6fDrm3OZxc0FKzCm+YZKrk97rZT9A2Y1MnWh/6H1aun6CjgOQO9Jef2di+cXNPbha63MzwkxEdX1HqMHNI3R5h/z4gXx5u4xry8PR/CC47c8FoH6M9WlB4EqTprcKTD3Qt3cPmY1JTQiaTJjj4DOi1PTwLotSF1h3mim0kr1ZRuHUz6lC4Ye4hwIfCc1dcW3TrGz1VOJ3V6y/0+nEdUyC4JMXD/sq2KvV10vS+xiFQgyTpMATUrDy792yp4gkdQ7aWsmrW3iCRIEqARWXNa7GwtPPVh0M5XLEujjEXeA9GmBd0EaRQW6jaPa4ril2dqY/gsh4OSW0qaGXlN65JkOYAuuWqwpPlWW3PcEnmvibNHMrhI/R1efZF9yV1CM3XbcdM1ze41GordpDmK62g3on8pHIl0JBr0V3LdxYt5fnj2w19GEIf8PCbRFrEPJ2h+yGjCLVzeZonN4OG3F6Jt8HEthkvmfwjvbtep8toEo164ZxAK7svtOIn3FqxhVY+pCbTj00hz2E0H7aRju5wuqg87yqjnNKiuP8o+dAW0hn6uNdth/vWsdDwFNcZtEEaoc8hft4ymL7pPKYUGqQRhBamExrCfijABzqBe7Njw7G15QEPAc5nSn+8csXfLjSOxrZHDTdCV6Jc7XNqCPVmxzc70eOdlR0um37crIB6s9Puc2H3uTpb5+uezSnFLfrZVgfeIjt/IFtAOiYUet68D//rY/isjEgYDD8Bff4PtMizMg=="]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:00:11","fail":1,"label":"All Tests","pass":0,"skip":0}],[],[{"elapsed":"00:00:11","fail":1,"id":"s1","label":"Start","name":"Start","pass":0,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:00:06","fail":1,"label":"All Tests","pass":0,"skip":0}],[],[{"elapsed":"00:00:06","fail":1,"id":"s1","label":"Start","name":"Start","pass":0,"skip":0}]];
 </script>
 <script type="text/javascript">
 window.output["errors"] = [];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1649848501909;
+window.output["baseMillis"] = 1652699224036;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 11502;
+window.output["generated"] = 5816;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;

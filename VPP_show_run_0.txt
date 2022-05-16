@@ -1,25 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.4 on win32)" generated="20220516 13:07:04.036" rpa="false" schemaversion="2">
-<suite id="s1" name="Start" source="C:\Users\Mario.Doman\Desktop\MY_PROJECTS\VPP_TREX_VMS\start.robot">
-<test id="s1-t1" name="Show run command on VPP csp2s22c03 before TREX tests">
-<kw name="Run Process" library="Process">
-<var>${result}</var>
-<arg>vagrant ssh csp2s22c03 -c 'sudo vppctl show run'</arg>
-<arg>shell=True</arg>
-<arg>stdout=VPP_show_run_0.txt</arg>
-<doc>Runs a process and waits for it to complete.</doc>
-<msg timestamp="20220516 13:07:04.061" level="INFO">Starting process:
-vagrant ssh csp2s22c03 -c 'sudo vppctl show run'</msg>
-<msg timestamp="20220516 13:07:04.064" level="INFO">Waiting for process to complete.</msg>
-<msg timestamp="20220516 13:07:09.840" level="INFO">Process completed.</msg>
-<msg timestamp="20220516 13:07:09.840" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
-<status status="PASS" starttime="20220516 13:07:04.061" endtime="20220516 13:07:09.840"/>
-</kw>
-<kw name="Should Contain" library="BuiltIn">
-<arg>${result.stdout}</arg>
-<arg>bytes from 10.10.1.2</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<msg timestamp="20220516 13:07:09.846" level="FAIL">'Time 2120.0, 10 sec internal node vector rate 0.00 loops/sec 9950836.51
+Time 2120.0, 10 sec internal node vector rate 0.00 loops/sec 9950836.51
   vector rates in 2.7358e-2, out 1.8868e-2, drop 9.4339e-3, punt 0.0000e0
              Name                 State         Calls          Vectors        Suspends         Clocks       Vectors/Call  
 GigabitEthernet0/8/0-output      active                 21              21               0          1.85e3            1.00
@@ -90,44 +69,4 @@ virtio-send-interrupt-process   any wait                 0               0      
 vpe-link-state-process         event wait                0               0               4          4.09e3            0.00
 vrrp-periodic-process          event wait                0               0               1          1.02e4            0.00
 vxlan-gpe-ioam-export-process   any wait                 0               0               1          3.92e3            0.00
-wg-timer-manager               event wait                0               0               1          3.81e9            0.00' does not contain 'bytes from 10.10.1.2'</msg>
-<status status="FAIL" starttime="20220516 13:07:09.840" endtime="20220516 13:07:09.846"/>
-</kw>
-<status status="FAIL" starttime="20220516 13:07:04.060" endtime="20220516 13:07:09.846">'Time 2120.0, 10 sec internal node vector rate 0.00 loops/sec 9950836.51
-  vector rates in 2.7358e-2, out 1.8868e-2, drop 9.4339e-3, punt 0.0000e0
-             Name                 State         Calls          Vectors        Suspends         Clocks       Vectors/Call  
-GigabitEthernet0/8/0-output      active                 21              21               0          1.85e3            1.00
-GigabitEthernet0/8/0-tx          active                 20              20               0          1.05e4            1.00
-GigabitEthernet0/9/0-output      active                 21              21               0          4.75e3            1.00
-GigabitEthernet0/9/0-tx          active                 20              20               0          2.12e4            1.00
-acl-plugin-fa-cleaner-process  event wait                0               0               1          8.19e3            0.00
-admin-up-down-process          event wait                0               0               1          1.21e4            0.00
-api-rx-from-ring                any wait                 0               0             109          5.93e5            0.00
-arp-input                        active                  4              16               0          1.14e3            4.00
-    [ Message content over the limit has been removed. ]
-...          6               0              13         4.81e10            0.00
-unix-cli-new-session            any wait                 0               0              11          1.20e8            0.00
-unix-epoll-input                 polling          22382299               0               0          8.66e2            0.00
-vhost-user-process              any wait                 0               0               1          3.74e3            0.00
-vhost-user-send-interrupt-proc  any wait                 0               0               1          2.63e3            0.00
-virtio-send-interrupt-process   any wait                 0               0               1          5.05e3            0.00
-vpe-link-state-process         event wait                0               0               4          4.09e3            0.00
-vrrp-periodic-process          event wait                0               0               1          1.02e4            0.00
-vxlan-gpe-ioam-export-process   any wait                 0               0               1          3.92e3            0.00
-wg-timer-manager               event wait                0               0               1          3.81e9            0.00' does not contain 'bytes from 10.10.1.2'</status>
-</test>
-<status status="FAIL" starttime="20220516 13:07:04.036" endtime="20220516 13:07:09.846"/>
-</suite>
-<statistics>
-<total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
-</total>
-<tag>
-</tag>
-<suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Start">Start</stat>
-</suite>
-</statistics>
-<errors>
-</errors>
-</robot>
+wg-timer-manager               event wait                0               0               1          3.81e9            0.00
